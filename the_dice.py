@@ -23,10 +23,14 @@ def throws(code):
         if '+' in size_of_dice_and_bias:
             [size_of_dice, bias] = size_of_dice_and_bias.split('+')
             size_of_dice = int(size_of_dice)
+            if size_of_dice not in dice_sizes:
+                return "Unallowed dice size"
             bias = int(bias)
             # return (num_of_throws, size_of_dice, bias)
         else:
             size_of_dice = int(size_of_dice_and_bias)
+            if size_of_dice not in dice_sizes:
+                return "Unallowed dice size"
             bias = 0
             # return (num_of_throws, size_of_dice, 0)
     except:
@@ -40,4 +44,4 @@ def throws(code):
     return sum_throw
 
 
-print(throws('D1'))
+print(throws('D8'))
