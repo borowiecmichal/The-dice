@@ -5,9 +5,11 @@
     D12-1: rzut kością D12, od wyniku odejmij 1.
 
 """
+import random
 
 
 def throws(code):
+    dice_sizes = (3, 4, 6, 8, 10, 12, 20, 100)
     if code[0] == 'D':
         code = '1' + code
 
@@ -22,14 +24,20 @@ def throws(code):
             [size_of_dice, bias] = size_of_dice_and_bias.split('+')
             size_of_dice = int(size_of_dice)
             bias = int(bias)
-            return (num_of_throws, size_of_dice, bias)
+            # return (num_of_throws, size_of_dice, bias)
         else:
-            size_of_dice = int(size_of_dice_and_bias)+2
+            size_of_dice = int(size_of_dice_and_bias)
             bias = 0
-            return (num_of_throws, size_of_dice, 0)
-
+            # return (num_of_throws, size_of_dice, 0)
     except:
         return "Unallowed code"
 
+    sum_throw = bias
+    for x in range(num_of_throws):
+        throw = random.randint(1, size_of_dice)
+        sum_throw += throw
 
-print(throws('5D2+5'))
+    return sum_throw
+
+
+print(throws('D1'))
