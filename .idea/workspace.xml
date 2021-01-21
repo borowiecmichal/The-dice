@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86438ea5-ffa5-45fb-ab2c-a68cdb133d84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/the_dice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_dice.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_dice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ONL_PYT_S_02_podstawy_pythona" />
   </component>
   <component name="RunManager">
     <configuration name="the_dice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -68,6 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611214671768</updated>
       <workItem from="1611214679597" duration="1357000" />
+      <workItem from="1611216139046" duration="21000" />
+      <workItem from="1611260167054" duration="1598000" />
     </task>
     <servers />
   </component>
@@ -84,8 +88,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/The_dice$the_dice.coverage" NAME="the_dice Coverage Results" MODIFIED="1611215163747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The_dice$the_dice.coverage" NAME="the_dice Coverage Results" MODIFIED="1611261337529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
