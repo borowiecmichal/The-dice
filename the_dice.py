@@ -6,11 +6,17 @@
 
 """
 
+
 def throws(code):
+    if code[0] == 'D':
+        code = '1' + code
+
     try:
         if 'D' in code:
             [num_of_throws, size_of_dice_and_bias] = code.split('D')
-
+            num_of_throws = int(num_of_throws)
+        else:
+            return "Unallowed code"
     except:
         return "Unallowed code"
 
@@ -19,11 +25,12 @@ def throws(code):
             [size_of_dice, bias] = size_of_dice_and_bias.split('+')
             size_of_dice = int(size_of_dice)
             bias = int(bias)
+            return (num_of_throws, size_of_dice, bias)
         else:
             size_of_dice = int(size_of_dice_and_bias)
+            return (num_of_throws, size_of_dice)
     except ValueError:
         return "Unallowed code"
 
 
-
-print(throws('2D10+2'))
+print(throws('D10+2'))
